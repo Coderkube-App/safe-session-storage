@@ -1,0 +1,59 @@
+{
+  "name": "safe-session-storage",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "A secure wrapper for localStorage and sessionStorage with automatic encryption.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
+    "test": "vitest run",
+    "lint": "tsc"
+  },
+  "keywords": [
+    "storage",
+    "security",
+    "encryption",
+    "localstorage",
+    "sessionstorage",
+    "react",
+    "hook"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "jsdom": "^29.0.2",
+    "react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.1.5"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}
