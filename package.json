@@ -55,5 +55,13 @@
   },
   "dependencies": {
     "crypto-js": "^4.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coderkube-App/safe-session-storage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Coderkube-App/safe-session-storage/issues"
+  },
+  "homepage": "https://github.com/Coderkube-App/safe-session-storage#readme"
 }
