@@ -2,6 +2,8 @@
 
 A secure, lightweight wrapper for `localStorage`, `sessionStorage`, and `AsyncStorage` (React Native) with automatic encryption. Prevent casual inspection of your application's stored data across all platforms.
 
+![safe-session-storage CLI Demo](./assets/demo.svg)
+
 ## Features
 
 -  **Automatic Encryption**: Data is encrypted before being stored.
